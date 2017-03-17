@@ -21,7 +21,7 @@ Flipper::Instrumentation::LogSubscriber.logger = $logger
 adapter = Flipper::Adapters::PStore.new
 flipper = Flipper.new(adapter, instrumenter: ActiveSupport::Notifications)
 
-Rails.application.routes.draw do
+Soloflipper::Application.routes.draw do
   mount Flipper::Api.app(flipper) => '/flipper/api'
   mount Flipper::UI.app(flipper) => '/flipper'
 end

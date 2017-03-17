@@ -35,9 +35,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'flipper'
-gem 'flipper-ui'
-gem 'flipper-api'
+gem 'flipper',github: 'jnunemaker/flipper'
+gem 'flipper-ui', github: 'jnunemaker/flipper'
+gem 'flipper-api', github: 'jnunemaker/flipper'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
